@@ -26,4 +26,5 @@ vuex
 vue-router
 moment
 lodash
+axios
 ```
