@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
+
+	body{
+		font-family: 'Lato', sans-serif;
+		position: relative;
+	}
+
+
+
+	.aside-left{
+		border: 1px solid #D8D8D8;
+		min-height: 100vh;
+		height: auto;
+/*		position:fixed;
+		left: 0;*/
+
+	}
+
+	.aside-left .box-aside {
+		height: 100px;
+		border-bottom: 1px solid #D8D8D8;
+		cursor: pointer;
+		font-size: 14px;
+		color: #848484;
+		font-weight: 300;
+		padding-top: 63px;
+
+	}
+	.aside-left .box-aside:hover,
+	.aside-left .active{
+		background-color: #EEEEEE;
+	}
+	.aside-left .box-aside:first-child:hover{
+		background-color: #FFF !important;
+	}
+
+	.aside-left  .hold-logo{
+		background-image: url(../gfx/logo-sm.jpg) ;
+		background-repeat: no-repeat;
+		background-position: center ;
+
+	}
+
+	.aside-left .tv-icon,
+	.menu-resp-container > .menu-mob ul .tv-series-resp{
+		background-image: url(../gfx/tv-icon.png) ;
+		background-position: center 13px;
+		background-repeat: no-repeat;
+	}
+
+	.aside-left .cam-icon,
+	.menu-resp-container > .menu-mob ul .cam-resp{
+		background-image: url(../gfx/cam.png) ;
+		background-position: center 15px;
+		background-repeat: no-repeat;
+	}
+
+	.aside-left .play-icon,
+	.menu-resp-container > .menu-mob ul .playlist-resp{
+		background-image: url(../gfx/play.png) ;
+		background-position: center 15px;
+		background-repeat: no-repeat;
+	}
+	.hold-top{
+		height: 101px;
+		border-bottom: 1px solid #D8D8D8;
+		width: 100%;
+	}
+	.rside{
+
+
+	}
+
+	.rside .hold-search{
+		padding-left: 15px;
+		padding-top: 30px;
+	}
+
+	.rside .hold-search .icon-search{
+		background-image: url(../gfx/search.png) ;
+		background-repeat: no-repeat ;
+		min-height: 80px;
+		padding-left: 46px;
+		background-position: 5px 5px;
+	}
+	.rside .hold-search .icon-search input[type="text"]{
+		width: 90%;
+		border: 0 ;
+		text-shadow: none;
+		font-size: 17px;
+		color: #ACAAAA;
+		font-weight: 400;
+		padding: 8px 5px;
+
+	}
+
+	.rside .hold-profile{
+		padding-top: 20px;
+	}
+
+	.rside .hold-profile .box-img{
+		width: 55px;
+		height: 55px;
+		-webkit-background-size: contain;
+		     -o-background-size: contain;
+		        background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		float: left;
+	}
+
+	.nome-user{
+		float: left;
+		font-size: 15px;
+		color: #ACAAAA;
+		padding: 16px 0 0 5px;
+	}
+
+	.rside .content{
+		padding-top: 30px;
+	}
+	.rside .content .hold-categoria{
+		font-size: 14px;
+		color: #ACAAAA;
+		letter-spacing: 5px;
+		font-weight: 700;
+	}
+
+	.rside .content .hold-title-filme{
+		font-size: 60px;
+		letter-spacing: 5px;
+		color: #272727;
+		margin-top: 10px;
+		font-weight: 900;
+	}
+	.rside .content .hold-infos-series{
+		font-size: 11px;
+		color: #ACAAAA;
+		letter-spacing: 1.4px;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+	.rside .content p{
+		font-size: 18px;
+		color: #ACAAAA;
+		letter-spacing: 1px;
+		font-weight: 300;
+		margin-top: 15px;
+	}
+	.rside .content p strong{
+		color: #6B6B6B;
+	}
+
+	.rside .content .assista,
+	.rside .content .filme-btn
+	{
+		background: #34B04A;
+		font-size: 14px;
+		color: #FFF;
+		line-height: 14px;
+		padding: 14px 34px;
+		border: 0 ;
+		cursor: pointer;
+	}
+	.rside .content .filme-btn{
+		background: #0082F9 !important;
+		margin-left: 10px;
+	}
+
+	.hold-poster{
+		height: 420px;
+		background-repeat: no-repeat;
+		-webkit-background-size: contain;
+		     -o-background-size: contain;
+		        background-size: contain;
+		background-position: center top ;
+	}
+
+
+/* ini:Style @media
+* --------------------------------------- */
+    @media (max-width: 1024px) {
+
+		.rside .content .assista,
+		.rside .content .filme-btn{
+			padding: 14px 12px;
+			float: left;
+			font-size: 12px;
+		}
+
+
+		.hold-top{
+			height: 72px;
+			width: 100%;
+			margin: 0;
+		}
+
+    }
+    @media (max-width: 991px) {
+
+    }
+
+    @media (min-width: 768px) {
+    }
+
+
+    @media (max-width: 414px) {
+    }
+
+    @media (max-width: 768px) and (orientation: landscape) {
+    }
+
+    @media (min-width: 1200px) and  (min-width: 1900px) {
+    }
+
+    @media screen and (min-width: 501px) and (max-width: 999px) {
+    }
+/* end:Style @media
+* --------------------------------------- */
+
+
+
+
+	.menu-resp .icon{
+		margin: 20px 0px;
+		list-style: none;
+	}
+	.menu-resp .icon li{
+		background: #D8D8D8;
+		height: 3px;
+		width: 45px;
+		margin-top: 2px;
+	}
+	.menu-resp .icon li:last-child{
+		height: auto;
+		background: transparent;
+		color: #555;
+		font-size: 12px;
+		font-weight: 700;
+		text-align: center;
+	}
+	.menu-resp-container{
+		position: fixed;
+		width: 40%;
+		height: 100%;
+		background: #FFF;
+		z-index: 90;
+		padding-top: 10px;
+		display: none;
+		border-right:1px solid #D8D8D8 ;
+	}
+	.menu-resp-container > .menu-mob ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.menu-resp-container > .menu-mob ul li,
+	.menu-resp-container > .menu-mob ul li a{
+		float: inherit;
+		width: 100%;
+		border-bottom: 1px solid #D8D8D8;
+		cursor: pointer;
+		font-size: 14px;
+		color: #848484;
+		font-weight: 300;
+		height: 90px;
+		padding-top: 54px;
+	}
+
+	.menu-resp-container > .menu-mob ul .tv-series-resp,
+	.menu-resp-container > .menu-mob ul .cam-resp,
+	.menu-resp-container > .menu-mob ul .playlist-resp{
+		background-position: center 10px ;
+		-webkit-background-size: 47px  ;
+		     -o-background-size: 47px  ;
+		        background-size: 47px  ;
+	}
+
+	.menu-resp-container > .menu-mob ul .playlist-resp{
+		background-color: #EEEEEE;
+	}

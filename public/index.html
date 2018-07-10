@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>Filmes</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+  <div class="row no-gutters">
+
+    <aside class="col-1 aside-left d-none d-lg-block ">
+      <div class="box-aside hold-logo"></div>
+      <a href="#/">
+        <div class="box-aside tv-icon text-center active">Séries de TV</div>
+      </a>
+      <div class="box-aside cam-icon text-center">Filmes</div>
+      <div class="box-aside play-icon text-center">Playlists</div>
+    </aside>
+
+    <div class="col rside row no-gutters">
+      <div class="hold-top w-100 row ">
+        <div class="hold-search col-lg-9 d-none d-lg-block">
+          <div class="icon-search">
+            <input type="text" name="search" placeholder="Procurar por filmes ou séries de tv">
+          </div>
+        </div>
+        <div class="col-lg-3 hold-profile d-none d-lg-block">
+          <div class="box-img " style="background-image:url(https://instagram.fcgr1-1.fna.fbcdn.net/vp/d7210b07988987b968db6b5f35df3bd8/5BDDE955/t51.2885-19/s150x150/25017308_389755384778808_8298402283645829120_n.jpg)"></div>
+          <div class="nome-user">Anderson de Castro</div>
+        </div>
+        <!-- ini:mobile -->
+        <div class="d-block d-lg-none hold-mobile">
+          <div class="logo-mobile">
+            <div class="menu-resp">
+              <ul class="icon">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li>MENU</li>
+              </ul>
+            </div>
+          </div>
+          <div class="menu-resp-container">
+            <nav class="menu-mob text-center">
+              <ul>
+                <li class="tv-series-resp">Séries de TV </li>
+                <li class="cam-resp">Filmes </li>
+                <li class="playlist-resp">Filmes </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- end:mobile -->
+      </div>
+      <div class="clearfix"></div>
+
+      <div id="app"></div>
+
+    </div>
+  </div>
+
+    <!-- built files will be auto injected -->
+  </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <script>
+      $( ".menu-resp" ).click(function() {
+          $( ".menu-resp-container" ).toggle('slow');
+      });
+  </script>
+</html>
